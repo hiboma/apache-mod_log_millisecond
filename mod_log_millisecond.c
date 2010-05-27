@@ -33,7 +33,7 @@ static int log_millisecond_pre_config(apr_pool_t *p, apr_pool_t *plog, apr_pool_
     if (!log_register)
         return DECLINED;
 
-    log_register(p, "M", log_request_duration_milliseconds, 0);
+    log_register(p, "M", log_request_duration_milliseconds, 1);
     return OK;
 }
 static void log_millisecond_register_hooks(apr_pool_t *p)
