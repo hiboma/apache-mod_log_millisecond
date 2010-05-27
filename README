@@ -1,0 +1,7 @@
+usage: 
+
+	# httpd.conf
+	LoadModule log_millisecond_module modules/mod_log_millisecond.so
+
+	# add '%M' to LogFormat
+	LogFormat "%M %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" x-common
