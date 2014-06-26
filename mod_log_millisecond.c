@@ -16,6 +16,7 @@
 #include "http_config.h"
 #include "http_protocol.h"
 #include "ap_config.h"
+#include "apr_strings.h"
 
 #include "mod_log_config.h"
 
